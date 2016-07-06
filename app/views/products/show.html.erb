@@ -1,19 +1,15 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Value:</strong>
-  <%= @product.value %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://www.gnu.org/graphics/gerwinski-gnu-head.png" alt="...">
+      <div class="caption">
+        <h3><td><%= @product.name %></td></h3>
+        <p><td><%= @product.value %></td></p>
+        <p><td><%= @product.description %></td></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
